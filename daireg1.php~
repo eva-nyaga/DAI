@@ -1,0 +1,23 @@
+<?php
+session_start();
+	include ('daireg.php');
+	
+	
+
+	while($row=mysql_fetch_array($result)) {
+		//echo $row['id'];
+		$_SESSION['fname'] = $row['fname'];
+		$_SESSION['lname'] = $row['lname'];
+		$_SESSION['email'] = $row['email'];
+		$_SESSION['phone'] = $row['phone'];
+		
+		}
+	 
+
+
+/*else {
+	echo "Something wicked happened.";
+	
+	}*/
+
+?>
